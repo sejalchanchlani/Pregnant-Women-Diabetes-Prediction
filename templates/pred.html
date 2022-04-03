@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='../static/pred.css' rel='stylesheet' type='text/css'>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="../static//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../static//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../static//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>Diabetes Predictor </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="pred.html">Prediction</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Logout</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>PREGNANT WOMEN DIABETES PREDICTION SYSTEM</h1>
+      <p class="lead">We care for you....</p>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          
+		  <div class="form-style-10">
+ 
+<h1>Diabetes Prediction Form</h1>
+
+<form action="{{ url_for('predict')}}"method="post">
+    <div class="section"><span>1</span>Basic Details:</div>
+    <div class="inner-wrap">
+        <label>Pregnancies Number<input type="text" name="Pregnancies" /></label>
+        <label>Glucose<input type="text" name="Glucose" /></label>
+    </div>
+
+    <div class="section"><span>2</span>Medical Details:</div>
+    <div class="inner-wrap">
+        <label>BP<input type="text" name="BloodPressure" /></label>
+        <label>Insulin <input type="text" name="Insulin" /></label>
+		<label>BMI<input type="text" name="BMI" /></label>
+		<label>DPF<input type="text" name="DiabetesPedigreeFunction" /></label>
+    </div>
+
+    <div class="section"><span>3</span>Diabetes Pedigree Function</div>
+        <div class="inner-wrap">
+        <label>Age<input type="text" name="Age" /></label>
+    </div>
+   <button type="submit">Submit</button>
+</form>
+</div>
+             {{ prediction_text }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+    
+
+   
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; SOUMYA,SRUSHTI AND TANVI</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="../static/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

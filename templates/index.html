@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="../static//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../static//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../static//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>Diabetes Predictor </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/scrolling-nav.css" rel="stylesheet">
+   <style>
+
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 80%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+   /* Position the "next button" to the right */
+   .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+  }
+
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: d;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+ }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+   color: #f2f2f2;
+   font-size: 20px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+  /* The dots/bullets/indicators */
+ .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover {
+  background-color: #717171;
+ }
+
+  /* Fading animation */
+  .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 60s;
+}
+
+   @-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+}
+
+   @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>PREGNANT WOMEN DIABETES PREDICTION SYSTEM</h1>
+      <p class="lead">We care for you....</p>
+    </div>
+  </header>
+
+ <section id="home">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8 mx-auto">
+          
+			<!--<img src="../static/preg.png" align="left" height="400" width="250">-->
+
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+			<img src="../static/img.jpg" style="width:100%" align="center">
+				<div class="text">Caption One</div>
+		</div>
+	</div>
+	
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+				<img src="../static/img3.jpg" style="width:100%" align="center">
+				<div class="text">Caption Two</div>
+			</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+				<img src="../static/img2.jpg" style="width:80%" align="center">
+				<div class="text">Caption Three</div>
+				</div>
+			</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+			 
+</div>
+</div>
+</div>
+</section>
+  
+   <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About Us</h2>
+		  <p class="lead"> Diabetes is a common, chronic disease which creates different types of diseases like heart attack, blindness, kidney disease etc. it is a disorder that occurs due to abnormal secretion of insulin from the pancreas which increases the glucose level in the body. The early identification is the only remedy to stay away from the complications.
+It is a disease that affects how your body converts food into energy. There are three types of diabetes.<br>
+1.	Type -1: The body does not produce insulin. <br>
+2.	Type -2: The body produces insulin but does not use it well. <br>
+3.	Gestational Diabetes: It is a type of diabetes that occurs during pregnancy. </p>
+		 
+          <p class="lead">This is a great place to check that you will have diabetes in future or not while you are pregnant.</p>
+          <p class="lead">You first have to register yourself, then enter some report details and we will show you the results of having diabetes or not while pregnancy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<div class="card bg-light">
+	<article class="card-body mx-auto" style="max-width: 400px;">
+		<h4 class="card-title mt-3 text-center">Create Account</h4>
+		<p class="text-center">Get started with your free account</p>
+		<p>
+			<a href="https://accounts.google.com/" class="btn btn-block btn-google"> <i class="fab fa-google"></i>   Login via Googles</a>
+			<a href="https://www.facebook.com/" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+		</p>
+	
+		<form action="/register" method="POST">
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+			</div>
+			<input name="name" class="form-control" placeholder="Full name" type="text">
+		</div> <!-- form-group// -->
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+			</div>
+			<input name="email" class="form-control" placeholder="Email address" type="email">
+		</div> <!-- form-group// -->
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+			</div>
+			<select class="custom-select" style="max-width: 120px;">
+				<option selected="">+91</option>
+				<option value="1">+972</option>
+				<option value="2">+198</option>
+				<option value="3">+701</option>
+			</select>
+			<input name="mobile" class="form-control" placeholder="Phone number" type="text">
+		</div> <!-- form-group// -->
+		
+		
+		
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-building"></i> </span>
+			</div>
+			<input name="state" class="form-control" placeholder="State" type="text">
+		</div> <!-- form-group// -->
+		
+		
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-building"></i> </span>
+			</div>
+			<input name="city" class="form-control" placeholder="City" type="text">
+		</div> <!-- form-group// -->
+		
+		
+		
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+			</div>
+			<input name="password" class="form-control" placeholder="Create password" type="password">
+		</div> <!-- form-group// -->
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+			</div>
+			<input name="repassword" class="form-control" placeholder="Repeat password" type="password">
+		</div> <!-- form-group// -->                                      
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+		</div> <!-- form-group// -->      
+		<p class="text-center">Have an account? <a href="{{ url_for('login')}}">Log In</a> </p>                                                                 
+	</form>
+	</article>
+	</div> <!-- card.// -->
+
+	
+			</div>
+		</div>
+		</div>
+	</section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact us</h2>
+          <p class="lead">SOUMYA GUPTA EN17CS301257
+		  <br>SRUSHTI SINHAL EN17CS301260
+		  <br>TANVI GUPTA EN17CS301269
+		  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; MINOR PROJECT 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="../static/js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
